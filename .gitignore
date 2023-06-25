@@ -3,6 +3,10 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+redis/appendonlydir-*
+redis/*.log
+redis/nodes-*
+redis/dump-*
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
