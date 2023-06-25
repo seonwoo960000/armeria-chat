@@ -1,17 +1,12 @@
 package org.example;
 
-import com.linecorp.armeria.common.HttpResponse;
-import com.linecorp.armeria.server.Server;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 
 public class Main {
     public static void main(String[] args) {
-        Server server = Server.builder()
-                              .http(8080)
-                              .service("/hello", (ctx, req) -> HttpResponse.of("hello world"))
-                              .build();
-
-        server.closeOnJvmShutdown();
-
-        server.start().join();
+        SpringApplication.run(Main.class, args);
     }
 }
