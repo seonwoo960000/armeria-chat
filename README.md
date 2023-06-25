@@ -7,4 +7,6 @@
 # Requirements
 - Java 8 or later
 - Redis 
-# armeria-chat
+
+# Architecture 
+![Armeria-chat architecture](images/architecture.png)
